@@ -1,10 +1,31 @@
 Rails.application.routes.draw do
+
+  get 'contact_us/contactus'
+
+  get 'gallery/gallery'
+
+  get 'hall_of_fame/halloffame'
+
+  get 'about/about'
+
+  get 'services/services'
+
+  get 'products/balls'
+
+  get 'products/bags'
+
+  get 'products/shoes'
+
+  get 'products/accessories'
+
+  get 'home/home'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
