@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  #Admin pages  
+  #resources :brands, :path => 'admin/brands'
+  #resources :balls, :path => 'admin/balls'
+
   get 'contact_us/contactus'
 
   get 'gallery/gallery'
@@ -10,21 +14,22 @@ Rails.application.routes.draw do
 
   get 'services/services'
 
+  #Products pages
+  get 'products/newproducts'
   get 'products/balls'
-
   get 'products/bags'
-
   get 'products/shoes'
-
   get 'products/accessories'
 
   get 'home/home'
+
+  get '/', :to => 'home#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  #root :to => 'home/home'
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
